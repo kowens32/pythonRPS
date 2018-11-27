@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "supervisor ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,7 @@
     "express-session": "1.15.6",
     "mongoose": "5.3.12",
     "morgan": "1.9.1"
-  }
+  },
+
+
 }

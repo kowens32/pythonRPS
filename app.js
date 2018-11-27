@@ -3,11 +3,11 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const cors = require('cors');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 const errorHandler = require('errorhandler');
 
-//Configure mongoose's promise to global promise
-mongoose.promise = global.Promise;
+// //Configure mongoose's promise to global promise
+// mongoose.promise = global.Promise;
 
 //Configure isProduction variable
 const isProduction = process.env.NODE_ENV === 'production';
@@ -27,9 +27,9 @@ if(!isProduction) {
   app.use(errorHandler());
 }
 
-//Configure Mongoose
-mongoose.connect('mongodb://localhost/passport-tutorial');
-mongoose.set('debug', true);
+// //Configure Mongoose
+// mongoose.connect('mongodb://localhost/passport-tutorial');
+// mongoose.set('debug', true);
 
 //Error handlers & middlewares
 if(!isProduction) {
